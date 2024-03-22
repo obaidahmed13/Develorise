@@ -1,0 +1,92 @@
+.midsection {
+    border: solid 1px ;
+    border-color: lightgray;
+    border-bottom: none;
+    background-color: white;
+    
+   
+
+}
+.nav {
+    padding: 20px;
+    position: sticky;
+    z-index: 3;
+    
+}
+
+  
+.top {
+    margin-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .scroll p {
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-top: 80px;
+    line-height: 10px;
+
+  }
+  
+  .RightToLeft {
+    animation: RightToLeft 45s infinite linear;
+    -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+    
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ 
+
+  .midsection {
+    position: relative;
+  }
+  
+  .imageContainer {
+    position: absolute;
+  
+    right: -40%;
+
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .image {
+    width: 250px;
+    height: 150px;
+    z-index: 6;
+    
+  }
+  
+ 
+  
+  

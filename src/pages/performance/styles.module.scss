@@ -1,0 +1,66 @@
+.container {
+    height: 100vh;
+    border-top: solid 1px black;
+    background-color: white;
+    padding: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+}
+
+.top {
+    margin-top: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    
+  }
+  
+  .container2 {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .scroll p {
+    font-size: 200px;
+    color: black;
+    font-weight: bolder;
+    margin-top: 450px;
+   
+
+  }
+  
+  .RightToLeft {
+    animation: RightToLeft 45s infinite linear;
+    -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-fill-color: white;
+
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ 
