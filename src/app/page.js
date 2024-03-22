@@ -8,6 +8,8 @@ import "./globals.css";
 import { useScroll } from "framer-motion";
 import StandOut from "../pages/standout/standout"
 import Performance from "../pages/performance/performance"
+import Card from '../components/Card';
+import { projects } from '../pages/cardpage/data';
 export default function Home() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -40,6 +42,15 @@ export default function Home() {
       <div style={{ position: 'relative', top: '-60px' }}>
         <StandOut />
       </div>
+
+      {
+        projects.map( (project, i) => {
+          const targetScale = 1 - ( (projects.length - i) * 0.05);
+          return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+        })
+      }
+
+      
     </main>
   );
 }
