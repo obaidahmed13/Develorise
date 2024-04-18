@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from "./styles.module.scss";
+import image1 from "../../../public/images/personlaptop1.png"
+import Image from 'next/image';
 
 
 const mainpage = () => {
@@ -8,7 +10,8 @@ const mainpage = () => {
         <h1 className={styles.vision}>Your Vision. <br/>Our Expertise.</h1>
         <h2 className={styles.h2}>Professional Web Design</h2>
         <div className={styles.imageContainer}>
-        <img className={styles.image} src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image" />
+        <Image className={styles.image} src={image1} alt="image" />
+        
       </div>
         <button className={styles.btn}>Get Free Consultation</button>
         

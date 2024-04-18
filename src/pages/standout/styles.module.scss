@@ -1,8 +1,8 @@
 .container {
     height: 100vh;
     border-top: solid 1px black;
-    background-color: #ede7e2;
-    padding: 100px;
+
+    padding: 80px;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     border-bottom: none;
@@ -10,7 +10,32 @@
     top: 0;
     left: 0;
     z-index: 2;
-    
-    
-    
+
+}
+
+.h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.containerw {
+   
+   display: flex;
+
+}
+.leftside {
+    margin-top:150px;
+}
+
+.image {
+    width: 600px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top:100px;
 }
